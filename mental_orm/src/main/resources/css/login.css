@@ -1,0 +1,52 @@
+#anchopane{
+    -fx-background-color: rgba(4, 9, 27, 0.8);
+    -fx-background-radius: 20;
+    -fx-border-style: groove;
+    -fx-border-color:  linear-gradient(to right, #ff00cc, #333399);
+    -fx-border-radius: 20;
+}
+
+#ancho{
+    -fx-background-image: url(../image/login.jpg);
+    -fx-text-fill: white;
+}
+
+#inner{
+    -fx-background-color: rgba(33, 33, 33, 0.8);
+    -fx-background-radius: 10;
+    -fx-border-style: groove;
+    -fx-border-color:  linear-gradient(to right, #ff00cc, #333399);
+    -fx-border-radius: 10;
+}
+#log{
+    -fx-background-color: linear-gradient(to right, #f0f2f0, #000c40);
+    -fx-background-radius: 10;
+    -fx-border-style: groove;
+    -fx-border-color: linear-gradient(to right, #ffeeee, #ddefbb);
+    -fx-border-radius: 10;
+}
+
+#text{
+    -fx-font-family: "serif";
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #00416a, #e4e5e6);
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#btn {
+    -fx-font-family: "serif";
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to right, #0575e6, #021b79);
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+#btn:hover{
+    -fx-background-color: linear-gradient(to right, #870000, #190a05);
+}

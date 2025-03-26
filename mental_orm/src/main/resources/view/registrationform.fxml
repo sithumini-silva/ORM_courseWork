@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" prefHeight="640.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PatientProgramController">
+   <children>
+      <Text layoutX="65.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id :" />
+      <Label fx:id="txtId" layoutX="63.0" layoutY="99.0" onDragDetected="#txtIdOnAction" prefHeight="27.0" prefWidth="168.0" text="Id" />
+      <Text layoutX="499.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Fee :" />
+      <TextField fx:id="txtRegiFee" layoutX="496.0" layoutY="249.0" onAction="#txtRegiFeeOnAction" prefHeight="25.0" prefWidth="197.0" />
+      <Text layoutX="60.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :" />
+      <Label fx:id="txtDate" layoutX="504.0" layoutY="99.0" onDragDetected="#txtDateOnAction" prefHeight="27.0" prefWidth="189.0" text="Date" />
+      <Text layoutX="504.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :" />
+      <Text layoutX="60.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme Name :" />
+      <TextField fx:id="txtPrName" layoutX="60.0" layoutY="328.0" onAction="#txtPrIdOnAction" prefHeight="25.0" prefWidth="197.0" />
+      <DatePicker fx:id="datePicker" layoutX="670.0" layoutY="100.0" onAction="#DateOnAction" prefHeight="25.0" prefWidth="89.0" />
+      <Text layoutX="504.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student name :" />
+      <Text layoutX="60.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme Id :" />
+      <Text layoutX="496.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programme Fee :" />
+      <TextField fx:id="txtPrFee" layoutX="496.0" layoutY="328.0" onAction="#txtPrFeeOnAction" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="txtStName" layoutX="500.0" layoutY="178.0" onAction="#txtStNameOnAction" prefHeight="25.0" prefWidth="197.0" />
+      <Button fx:id="btnSave" layoutX="349.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
+      <ComboBox fx:id="cmbPrId" layoutX="60.0" layoutY="249.0" onAction="#cmbPrNameOnAction" prefHeight="25.0" prefWidth="197.0" />
+      <Button fx:id="btnRegi" layoutX="524.0" layoutY="601.0" mnemonicParsing="false" onAction="#btnRegiOnAction" text="Register" />
+      <ComboBox fx:id="cmbstId" layoutX="60.0" layoutY="178.0" onAction="#cmbStIdOnAction" prefHeight="25.0" prefWidth="197.0" />
+      <TableView fx:id="tblRegisters" layoutX="33.0" layoutY="407.0" prefHeight="200.0" prefWidth="789.0">
+        <columns>
+          <TableColumn fx:id="colReId" prefWidth="64.0" text="Register Id" />
+          <TableColumn fx:id="colPrId" prefWidth="150.0" text="Program Id" />
+            <TableColumn fx:id="colPrName" prefWidth="61.0" text="Program Name" />
+            <TableColumn fx:id="colStId" prefWidth="107.0" text="Student Id" />
+            <TableColumn fx:id="colStName" prefWidth="108.0" text="Student Name" />
+            <TableColumn fx:id="colPrFee" prefWidth="98.0" text="Program fee" />
+            <TableColumn fx:id="colReFee" prefWidth="115.0" text="Register fee" />
+            <TableColumn fx:id="colDate" prefWidth="85.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

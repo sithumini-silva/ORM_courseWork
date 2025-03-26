@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="ancho" fx:id="rootNode" prefHeight="667.0" prefWidth="852.0" stylesheets="@../css/user.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.UserFormController">
+   <children>
+      <AnchorPane id="ancho1" layoutX="134.0" layoutY="12.0" prefHeight="643.0" prefWidth="709.0" stylesheets="@../css/user.css">
+         <children>
+            <Text fill="#dbe985" layoutX="286.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Register Form" textAlignment="CENTER">
+               <font>
+                  <Font name="Corbel Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#e5ebef" layoutX="108.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+            <Text fill="#e5ebef" layoutX="108.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role :">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+            <Text fill="#e5ebef" layoutX="107.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+            <Text fill="#e5ebef" layoutX="412.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+            <Text fill="#e5ebef" layoutX="412.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel Number :">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+            <TextField id="text" fx:id="txtId" layoutX="107.0" layoutY="97.0" onAction="#txtIdOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtTel" layoutX="411.0" layoutY="187.0" onAction="#txtTelOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtEmail" layoutX="411.0" layoutY="98.0" onAction="#txtEmailOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtRole" layoutX="107.0" layoutY="260.0" onAction="#txtRoleOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtName" layoutX="107.0" layoutY="184.0" onAction="#txtNameOnAction" stylesheets="@../css/user.css" />
+            <TableView id="tabel" fx:id="tblUser" layoutX="27.0" layoutY="338.0" prefHeight="281.0" prefWidth="656.0" stylesheets="@../css/user.css">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="87.0" text="Name" />
+                  <TableColumn fx:id="colRole" prefWidth="116.0" text="Role" />
+                  <TableColumn fx:id="colEmail" prefWidth="134.0" text="Email" />
+                  <TableColumn fx:id="colTel" prefWidth="102.0" text="Tel Number" />
+                  <TableColumn fx:id="colPass" prefWidth="81.0" text="Password" />
+              </columns>
+            </TableView>
+            <TextField id="text" fx:id="txtPassword" layoutX="411.0" layoutY="263.0" prefHeight="30.0" prefWidth="190.0" stylesheets="@../css/user.css" />
+            <Text fill="#e5ebef" layoutX="411.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Text>
+         </children>
+         <cursor>
+            <Cursor fx:constant="SW_RESIZE" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane id="miniDash1" layoutX="14.0" layoutY="12.0" prefHeight="643.0" prefWidth="113.0" stylesheets="@../css/user.css">
+         <children>
+            <Text layoutX="23.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button id="btn" fx:id="btnDelete" layoutX="20.0" layoutY="136.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Delete" />
+            <Button id="btn" fx:id="btnClear" layoutX="20.0" layoutY="260.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Clear" />
+            <Button id="btn" fx:id="btnUpdate" layoutX="20.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Update" />
+            <Button id="btn" fx:id="btnBack" layoutX="20.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Back" />
+            <Button id="btn" fx:id="btnSearch" layoutX="20.0" layoutY="322.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Search" />
+            <Button id="btn" fx:id="btnExit" layoutX="20.0" layoutY="490.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Exit" />
+            <Button id="btn" fx:id="btnSave" layoutX="20.0" layoutY="74.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Save">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.18421052396297455" green="0.16374269127845764" blue="0.16374269127845764" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

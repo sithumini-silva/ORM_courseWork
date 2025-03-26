@@ -1,0 +1,35 @@
+#ancho {
+    -fx-background-color: rgba(18, 52, 162, 0.25) 0px 54px 55px;
+    -fx-box-shadow: rgba(117, 250, 31, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(3, 25, 47, 0.35) 0px -2px 6px 0px inset;
+    -fx-text-fill: black;
+    -fx-font-family: "sans-serif";
+}
+#btn {
+    -fx-font-family: "serif";
+    -fx-text-fill: black;
+    -fx-background-color: #6de726;
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+#btn:hover{
+    -fx-background-color: red;
+}
+#tabel{
+    -fx-background-color: #eae0c8;
+}
+#text{
+    -fx-font-family: "serif";
+    -fx-text-fill: blue;
+    -fx-background-color: white;
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+#text:hover{
+    -fx-background-color: #00ffff ;
+}

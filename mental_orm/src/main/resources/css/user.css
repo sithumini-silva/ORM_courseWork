@@ -1,0 +1,54 @@
+#ancho{
+    -fx-background-color: linear-gradient(to left, #43c6ac, #191654);
+    -fx-box-shadow: rgba(117, 250, 31, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(3, 25, 47, 0.35) 0px -2px 6px 0px inset;
+    -fx-text-fill: white;
+    -fx-font-family: "sans-serif";
+}
+
+#ancho1{
+    -fx-background-color: linear-gradient(to bottom, #403b4a, #e7e9bb);
+    -fx-box-shadow: rgba(117, 250, 31, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(3, 25, 47, 0.35) 0px -2px 6px 0px inset;
+    -fx-text-fill: black;
+    -fx-font-family: "sans-serif";
+}
+
+#miniDash1{
+    -fx-background-color:#c9c0bb ;
+}
+#text{
+    -fx-font-family: "serif";
+    -fx-text-fill: blue;
+    -fx-background-color: white;
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+#text:hover{
+    -fx-background-color: #aec6cf;
+}
+#btn {
+    -fx-font-family: "serif";
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(to left, #f7f8f8, #acbb78);
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+#btn:hover{
+    -fx-background-color: linear-gradient(to top, #fffbd5, #b20a2c);
+}
+#tabel{
+    -fx-background-color: linear-gradient(to top, #abbaab, #ffffff);
+    -fx-border-color: black;
+    -fx-border-style: groove;
+}
+#tabel:hover{
+    -fx-background-color: linear-gradient(to bottom, #757f9a, #d7dde8);
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-font-family: "serif";
+}

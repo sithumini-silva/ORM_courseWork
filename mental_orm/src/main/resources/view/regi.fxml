@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="ancho" fx:id="rootNode" prefHeight="663.0" prefWidth="868.0" stylesheets="@../css/user.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.RegisterFormController">
+   <children>
+      <AnchorPane id="ancho1" layoutX="140.0" layoutY="14.0" prefHeight="635.0" prefWidth="713.0" stylesheets="@../css/user.css">
+         <children>
+            <Text fill="#fdffbb" layoutX="266.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Register Form">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#e3f2ff" layoutX="105.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font></Text>
+            <Text fill="#e3f2ff" layoutX="105.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role :">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font></Text>
+            <Text fill="#e3f2ff" layoutX="104.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font></Text>
+            <Text fill="#e3f2ff" layoutX="424.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font></Text>
+            <Text fill="#e3f2ff" layoutX="426.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel Number :">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font></Text>
+            <TextField id="text" fx:id="txtId" layoutX="104.0" layoutY="101.0" onAction="#txtIdOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtTel" layoutX="426.0" layoutY="188.0" onAction="#txtTelOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtEmail" layoutX="426.0" layoutY="101.0" onAction="#txtEmailOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtRole" layoutX="104.0" layoutY="264.0" onAction="#txtRoleOnAction" stylesheets="@../css/user.css" />
+            <TextField id="text" fx:id="txtName" layoutX="104.0" layoutY="188.0" onAction="#txtNameOnAction" stylesheets="@../css/user.css" />
+            <TableView id="tabel" fx:id="tblUser" layoutX="32.0" layoutY="318.0" prefHeight="291.0" prefWidth="648.0" stylesheets="@../css/user.css">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="87.0" text="Name" />
+                  <TableColumn fx:id="colRole" prefWidth="116.0" text="Role" />
+                  <TableColumn fx:id="colEmail" prefWidth="134.0" text="Email" />
+                  <TableColumn fx:id="colTel" prefWidth="102.0" text="Tel Number" />
+                  <TableColumn fx:id="colPass" prefWidth="81.0" text="Password" />
+              </columns>
+            </TableView>
+            <TextField id="text" fx:id="txtPassword" layoutX="426.0" layoutY="264.0" prefHeight="30.0" prefWidth="190.0" stylesheets="@../css/user.css" />
+            <Text fill="#e3f2ff" layoutX="431.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font></Text>
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane id="miniDash1" layoutX="14.0" layoutY="14.0" prefHeight="635.0" prefWidth="121.0" stylesheets="@../css/user.css">
+         <children>
+            <Text layoutX="23.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Button id="btn" fx:id="btnSave" layoutX="23.0" layoutY="83.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Save">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button id="btn" fx:id="btnDelete" layoutX="23.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Delete" />
+            <Button id="btn" fx:id="btnClear" layoutX="23.0" layoutY="261.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Clear" />
+            <Button id="btn" fx:id="btnUpdate" layoutX="23.0" layoutY="198.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Update" />
+            <Button id="btn" fx:id="btnBack" layoutX="23.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Back" />
+            <Button id="btn" fx:id="btnSearch" layoutX="23.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Search" />
+            <Button id="btn" fx:id="btnExit" layoutX="23.0" layoutY="514.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="37.0" prefWidth="74.0" stylesheets="@../css/user.css" text="Exit" />
+         </children>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

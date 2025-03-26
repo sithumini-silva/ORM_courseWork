@@ -1,0 +1,45 @@
+#ancho{
+    -fx-background-color: linear-gradient(to bottom, #003973, #e5e5be);
+
+}
+#minancho > Text {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-weight: bold;
+}
+
+/* Health Stats Cards */
+.health-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 15px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 5, 0, 0, 1);
+}
+
+.health-card-title {
+    -fx-font-size: 14px;
+    -fx-fill: #607d8b;
+}
+
+.health-card-value {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #0d47a1;
+}
+
+.health-card-icon {
+    -fx-effect: dropshadow(three-pass-box, rgba(33,150,243,0.3), 3, 0, 1, 1);
+}
+#btn{
+    -fx-background-color: linear-gradient(to bottom, #c9d6ff, #e2e2e2);
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-border-style: groove;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-family: "serif";
+}
+#btn:hover{
+    -fx-background-color: yellow;
+}

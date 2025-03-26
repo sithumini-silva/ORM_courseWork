@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="anchopane" fx:id="rootNode" prefHeight="534.0" prefWidth="850.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginFormController">
+   <children>
+      <AnchorPane id="ancho" layoutX="20.0" layoutY="16.0" prefHeight="503.0" prefWidth="817.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/login.css">
+         <children>
+            <ImageView fitHeight="502.0" fitWidth="819.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <AnchorPane id="inner" layoutX="459.0" layoutY="29.0" prefHeight="451.0" prefWidth="331.0" stylesheets="@../css/login.css">
+               <children>
+                  <AnchorPane id="log" layoutX="19.0" layoutY="13.0" onDragDetected="#txtPasswordOnAction" prefHeight="423.0" prefWidth="294.0" stylesheets="@../css/login.css">
+                     <children>
+                        <TextField id="text" fx:id="txtUserID" layoutX="41.0" layoutY="74.0" onAction="#txtUserIdOnAction" prefHeight="25.0" prefWidth="212.0" promptText="User Id" stylesheets="@../css/login.css" />
+                        <TextField id="text" fx:id="txtPassword" layoutX="41.0" layoutY="133.0" onAction="#txtPasswordOnAction" prefHeight="25.0" prefWidth="212.0" promptText="Password" stylesheets="@../css/login.css" />
+                        <Button id="btn" fx:id="btnLogin" layoutX="72.0" layoutY="246.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="30.0" prefWidth="148.0" stylesheets="@../css/login.css" text="Login" />
+                        <TextField id="text" fx:id="txtRoll" layoutX="41.0" layoutY="197.0" onAction="#txtRollOnAction" prefHeight="25.0" prefWidth="212.0" promptText="Role" stylesheets="@../css/login.css" />
+                        <Text layoutX="85.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forget your Password !" />
+                        <Hyperlink layoutX="93.0" layoutY="304.0" onAction="#hypForgetOnAction" text="Reset Password" textFill="#280b7c">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <Text layoutX="88.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can register now !" />
+                        <Button id="btn" layoutX="73.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="30.0" prefWidth="148.0" stylesheets="@../css/login.css" text="Register" />
+                        <Text fill="#6cf55f" layoutX="88.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN NOW">
+                           <font>
+                              <Font name="System Bold Italic" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

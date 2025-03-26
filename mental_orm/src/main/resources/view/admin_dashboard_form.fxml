@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="ancho" fx:id="rootNode" prefHeight="690.0" prefWidth="1112.0" stylesheets="@../css/dashboard.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DashboardFormController">
+   <children>
+      <AnchorPane id="minancho" fx:id="miniDash" layoutX="221.0" layoutY="10.0" prefHeight="663.0" prefWidth="868.0" stylesheets="@../css/dashboard.css">
+         <children>
+            <Text fill="#bf1a17" layoutX="375.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBack1" layoutX="690.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnBack1OnAction" prefHeight="37.0" prefWidth="81.0" style="-fx-background-color: #EE5A24;" text="&lt; Back" />
+         </children>
+      </AnchorPane>
+      <Button id="btn" fx:id="btnDash" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#btnDashOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="Dashboard">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button id="btn" fx:id="btnPatient" layoutX="12.0" layoutY="179.0" mnemonicParsing="false" onAction="#btnStuOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="Patient Manage">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="37.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/dashboard-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="25.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/item-icon.png" />
+         </image>
+      </ImageView>
+      <Button id="btn" fx:id="btnProgramme" layoutX="12.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnProgramOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="Programme Mnage">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="25.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/log.jpg" />
+         </image>
+      </ImageView>
+      <Button id="btn" fx:id="btnRegister" layoutX="12.0" layoutY="328.0" mnemonicParsing="false" onAction="#btnRegiOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="       Register Manage">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="27.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/customer-icon.png" />
+         </image>
+      </ImageView>
+      <Button id="btn" fx:id="btnLogin" layoutX="12.0" layoutY="473.0" mnemonicParsing="false" onAction="#btnLogOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="Login">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="27.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/payment-icon.png" />
+         </image>
+      </ImageView>
+      <Button id="btn" fx:id="btnUser" layoutX="12.0" layoutY="398.0" mnemonicParsing="false" onAction="#btnUserOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="User Manage">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="27.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/payment-icon.png" />
+         </image>
+      </ImageView>
+      <Button id="btn" fx:id="btnPayment" layoutX="12.0" layoutY="546.0" mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="Payment Manage">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="20.0" fitWidth="25.0" layoutX="27.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/customer-icon.png" />
+         </image>
+      </ImageView>
+      <Button id="btn" fx:id="btnRegi" layoutX="14.0" layoutY="620.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="48.0" prefWidth="184.0" stylesheets="@../css/dashboard.css" text="Registration">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
