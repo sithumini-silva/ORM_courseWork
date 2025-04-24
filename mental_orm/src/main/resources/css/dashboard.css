@@ -41,5 +41,11 @@
     -fx-font-family: "serif";
 }
 #btn:hover{
-    -fx-background-color: yellow;
+    -fx-background-color: linear-gradient(to top, #d9a7c7, #fffcdc);
+}
+#btnBack1{
+    -fx-background-color:  linear-gradient(to top, #ef3b36, #ffffff);
+}
+#btnBack1:hover{
+    -fx-background-color:  linear-gradient(to top, #43c6ac, #f8ffae);
 }

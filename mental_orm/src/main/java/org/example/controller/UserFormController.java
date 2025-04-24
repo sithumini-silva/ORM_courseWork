@@ -70,6 +70,10 @@ public class UserFormController {
     private TextField txtName;
     @FXML
     private TextField txtTel;
+    @FXML
+    private AnchorPane sideAnco;
+    @FXML
+    private AnchorPane anco1;
 
     private UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
 

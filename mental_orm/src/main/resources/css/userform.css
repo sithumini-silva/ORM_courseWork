@@ -1,0 +1,22 @@
+#rootNode{
+    -fx-background-color: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+}
+#sideAnco{
+    -fx-background-color: linear-gradient(to top, #283048, #859398);
+    -fx-fill: white;
+}
+#anco1{
+    -fx-background-color: linear-gradient(to top, #d9a7c7, #fffcdc);
+}
+#btnSave,#btnDelete,#btnUpdate,#btnClear,#btnSearch,#btnBack{
+    -fx-background-color: linear-gradient(to top, #ffefba, #ffffff);
+}
+#tblUser{
+    -fx-background-color:  linear-gradient(to top, #abbaab, #ffffff);
+}
+#txtId:hover,#txtName:hover,#txtEmail:hover,#txtTel:hover,#txtRole:hover,#txtPassword:hover {
+    -fx-background-color: linear-gradient(to top, #4ca1af, #c4e0e5);
+}
+#btnSave:hover,#btnDelete:hover,#btnUpdate:hover,#btnClear:hover,#btnSearch:hover,#btnBack:hover {
+    -fx-background-color: linear-gradient(to right, #00416a, #e4e5e6);
+}
