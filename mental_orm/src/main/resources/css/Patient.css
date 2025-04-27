@@ -1,5 +1,5 @@
 #ancho{
-    -fx-background-color: rgba(91, 115, 201, 0.6);
+    -fx-background-color:linear-gradient(to right, #bdc3c7, #2c3e50);
     -fx-text-fill: black;
     -fx-font-family: "sans-serif";
 }
@@ -26,7 +26,7 @@
 #btn {
     -fx-font-family: "serif";
     -fx-text-fill: black;
-    -fx-background-color: #6de726;
+    -fx-background-color:linear-gradient(to right, #cac531, #f3f9a7);
     -fx-font-size: 15px;
     -fx-border-color: black;
     -fx-border-style: groove;
@@ -34,10 +34,10 @@
     -fx-background-radius: 5px;
 }
 #btn:hover{
-    -fx-background-color: red;
+    -fx-background-color: linear-gradient(to right, #800080, #ffc0cb);
 }
 #tabel{
-    -fx-background-color: #d8b2d1;
+    -fx-background-color: linear-gradient(to right, #d9a7c7, #fffcdc);
 }
 #tabel:hover{
     -fx-background-color: #b19cd9;

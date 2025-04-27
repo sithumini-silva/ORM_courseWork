@@ -13,21 +13,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="ancho" fx:id="rootNode" prefHeight="668.0" prefWidth="872.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PaymentFormController">
+<AnchorPane id="ancho" fx:id="rootNode" prefHeight="668.0" prefWidth="872.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PaymentFormController">
    <children>
-      <Text fill="#22d307" layoutX="353.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment manage" textAlignment="CENTER">
+      <Text fill="#f4f487" layoutX="353.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment manage" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Text>
-      <Text layoutX="64.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Id :" />
-      <Text layoutX="485.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Id :" />
-      <Text layoutX="61.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="program name :" />
-      <Text layoutX="485.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student name :" />
-      <Text layoutX="64.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course fee :" />
-      <Text layoutX="491.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid price :" />
-      <Text layoutX="486.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blanace :" />
-      <ComboBox id="cmb" fx:id="cmbProId" layoutX="61.0" layoutY="196.0" onAction="#cmbProIdOnAction" prefHeight="25.0" prefWidth="184.0" stylesheets="@../css/style.css">
+      <Text fill="#f8f1f1" layoutX="64.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Id :" />
+      <Text fill="#f8f1f1" layoutX="485.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Id :" />
+      <Text fill="#f8f1f1" layoutX="64.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="program name :" />
+      <Text fill="#f8f1f1" layoutX="480.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patient Name :" />
+      <Text fill="#f8f1f1" layoutX="63.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Session fee :" />
+      <Text fill="#f8f1f1" layoutX="480.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paid price :" />
+      <Text fill="#f8f1f1" layoutX="63.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blanace :" />
+      <ComboBox id="cmb" fx:id="cmbProId" layoutX="61.0" layoutY="175.0" onAction="#cmbProIdOnAction" prefHeight="25.0" prefWidth="184.0" stylesheets="@../css/style.css">
          <effect>
             <InnerShadow>
                <color>
@@ -43,7 +43,7 @@
                </color>
             </InnerShadow>
          </effect></ComboBox>
-      <Label id="label" fx:id="lblProName" layoutX="64.0" layoutY="293.0" onDragDetected="#lblProNameOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="program name">
+      <Label id="label" fx:id="lblProName" layoutX="64.0" layoutY="248.0" onDragDetected="#lblProNameOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="program name">
          <effect>
             <DropShadow height="15.14" radius="7.07" width="15.14">
                <color>
@@ -51,7 +51,7 @@
                </color>
             </DropShadow>
          </effect></Label>
-      <Label id="label" fx:id="lblStName" layoutX="488.0" layoutY="209.0" onDragDetected="#lblStNameOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="student name">
+      <Label id="label" fx:id="lblStName" layoutX="488.0" layoutY="248.0" onDragDetected="#lblStNameOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="Patient name">
          <effect>
             <DropShadow height="15.14" radius="6.3375" width="12.21">
                <color>
@@ -59,7 +59,7 @@
                </color>
             </DropShadow>
          </effect></Label>
-      <Label id="label" fx:id="lblPayment" layoutX="64.0" layoutY="368.0" onDragDetected="#lblPaymentOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="Payment">
+      <Label id="label" fx:id="lblPayment" layoutX="64.0" layoutY="306.0" onDragDetected="#lblPaymentOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="Payment">
          <effect>
             <DropShadow height="15.14" radius="7.07" width="15.14">
                <color>
@@ -67,7 +67,7 @@
                </color>
             </DropShadow>
          </effect></Label>
-      <Label id="label" fx:id="lblFullPay" layoutX="488.0" layoutY="368.0" onDragDetected="#lblFullPayOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="Full payment">
+      <Label id="label" fx:id="lblFullPay" layoutX="64.0" layoutY="374.0" onDragDetected="#lblFullPayOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="Full payment">
          <effect>
             <DropShadow height="15.14" radius="7.07" width="15.14">
                <color>
@@ -83,7 +83,7 @@
             <TableColumn fx:id="colLast" prefWidth="203.0" text="Last price" />
         </columns>
       </TableView>
-      <Text layoutX="64.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Id :" />
+      <Text fill="#f8f1f1" layoutX="64.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Id :" />
       <Label id="label" fx:id="txtPaymentId" layoutX="64.0" layoutY="107.0" onDragDetected="#lblPaymentIdOnAction" prefHeight="25.0" prefWidth="178.0" stylesheets="@../css/style.css" text="payment id">
          <effect>
             <DropShadow height="5.86" radius="2.55" width="6.34">
@@ -92,11 +92,11 @@
                </color>
             </DropShadow>
          </effect></Label>
-      <Button id="btn" fx:id="btnSave" layoutX="208.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnSaveOnAction" stylesheets="@../css/style.css" text="Save" />
-      <Button id="btn" fx:id="btnUpdate" layoutX="320.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" stylesheets="@../css/style.css" text="Update" />
-      <Button id="btn" fx:id="btnDelete" layoutX="436.0" layoutY="406.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" stylesheets="@../css/style.css" text="Delete" />
-      <TextField fx:id="txtPaid" layoutX="485.0" layoutY="294.0" onAction="#txtPaidOnAction" prefHeight="25.0" prefWidth="184.0" />
-      <ComboBox id="cmb" fx:id="cmbRegiId" layoutX="485.0" layoutY="143.0" onAction="#cmbRegiIdOnAction" prefHeight="25.0" prefWidth="184.0" stylesheets="@../css/style.css">
+      <Button id="btn" fx:id="btnSave" layoutX="492.0" layoutY="391.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Save" />
+      <Button id="btn" fx:id="btnUpdate" layoutX="619.0" layoutY="391.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Update" />
+      <Button id="btn" fx:id="btnDelete" layoutX="742.0" layoutY="391.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="100.0" stylesheets="@../css/style.css" text="Delete" />
+      <TextField fx:id="txtPaid" layoutX="485.0" layoutY="318.0" onAction="#txtPaidOnAction" prefHeight="25.0" prefWidth="184.0" />
+      <ComboBox id="cmb" fx:id="cmbRegiId" layoutX="485.0" layoutY="175.0" onAction="#cmbRegiIdOnAction" prefHeight="25.0" prefWidth="184.0" stylesheets="@../css/style.css">
          <effect>
             <InnerShadow>
                <color>
@@ -105,7 +105,7 @@
             </InnerShadow>
          </effect>
       </ComboBox>
-      <Text layoutX="485.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Id :" />
+      <Text fill="#f8f1f1" layoutX="487.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Id :" />
    </children>
    <effect>
       <InnerShadow choke="0.03" radius="6.215" width="5.86">
